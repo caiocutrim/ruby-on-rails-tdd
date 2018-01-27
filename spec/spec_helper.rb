@@ -18,6 +18,7 @@ RSpec.configure do |config|
   # assertion/expectation library such as wrong or the stdlib/minitest
   # assertions if you prefer.
   config.expect_with :rspec do |expectations|
+  config.default_formatter = "doc"
     # This option will default to `true` in RSpec 4. It makes the `description`
     # and `failure_message` of custom matchers include text for helper methods
     # defined using `chain`, e.g.:
@@ -77,7 +78,7 @@ RSpec.configure do |config|
     # Use the documentation formatter for detailed output,
     # unless a formatter has already been configured
     # (e.g. via a command-line flag).
-    config.default_formatter = "doc"
+    # config.default_formatter = "doc"
   end
 
   # Print the 10 slowest examples and example groups at the
